@@ -16,5 +16,4 @@ make
 TODO
 ----
 * All generated RPMs are untested right now.
-* CentOS 5 (or EPEL) does not have a new enough ruby for FPM to work/install.
 * Fedora 16-19 do not have official docker images. TBD how to build those.

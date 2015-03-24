@@ -1,5 +1,5 @@
-IMAGE_UUID := $(shell uuidgen)
-CONTAINER_UUID := $(shell uuidgen)
+IMAGE_UUID := $(shell uuidgen | tr "[:upper:]" "[:lower:]")
+CONTAINER_UUID := $(shell uuidgen | tr "[:upper:]" "[:lower:]")
 
 default: docker
 

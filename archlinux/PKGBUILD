@@ -1,0 +1,13 @@
+pkgname=luvi
+pkgver=git
+pkgrel=1
+pkgdesc="Luvi - A project in-between luv and luvit."
+arch=(x86_64)
+url="http://luvit.io/"
+license=('Apache')
+makedepends=(gcc git cmake yasm fakeroot)
+source=()
+package() {
+        mkdir -p $pkgdir/usr/bin/
+        cp ../build/luvi $pkgdir/usr/bin/
+}
